@@ -1,10 +1,19 @@
-<div class="login-container">
-  <img src="logo.png" class="logo" />
-  <h2>Welcome to Rakesh World</h2>
+<div class="login-wrapper">
+  <div class="login-card">
+    <h2>Sign in</h2>
 
-  <button class="sso-btn">
-    🔐 Sign in with SSO
-  </button>
-
-  <p class="hint">Secure login via your organization</p>
+    <button
+      class="ms-sso-btn"
+      (click)="loginWithSSO()"
+      [disabled]="loading"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+        alt="Microsoft logo"
+      />
+      <span>
+        {{ loading ? 'Signing in…' : 'Sign in with Microsoft' }}
+      </span>
+    </button>
+  </div>
 </div>
