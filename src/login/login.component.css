@@ -1,36 +1,62 @@
-.login-container {
+/* Page center */
+.login-wrapper {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: #f5f7fb;
-  font-family: Arial, sans-serif;
+  justify-content: center;
+  background: #f5f6f8;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.logo {
-  height: 60px;
-  margin-bottom: 20px;
+/* Card */
+.login-card {
+  background: #ffffff;
+  padding: 32px 28px;
+  width: 360px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 
-.sso-btn {
-  padding: 14px 40px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: none;
-  background: #2563eb;
-  color: white;
+.login-card h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+/* Microsoft SSO button */
+.ms-sso-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 12px 16px;
+  background: #ffffff;
+  color: #1b1b1b;
+
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.2s;
+
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.sso-btn:hover {
-  background: #1e40af;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+.ms-sso-btn img {
+  width: 20px;
+  height: 20px;
 }
 
-.hint {
-  margin-top: 12px;
-  font-size: 13px;
-  color: #6b7280;
+.ms-sso-btn:hover:not(:disabled) {
+  background: #f3f3f3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ms-sso-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
