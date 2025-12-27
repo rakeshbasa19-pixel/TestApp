@@ -1,0 +1,36 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.sso-btn {
+  padding: 14px 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sso-btn:hover {
+  background: #1e40af;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #6b7280;
+}
